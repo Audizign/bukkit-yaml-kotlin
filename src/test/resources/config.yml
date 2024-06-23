@@ -1,0 +1,13 @@
+# key: value
+section-1:
+  key: nested
+section-2:
+  key: tested
+parent:
+  child:
+    key: nested value
+overwrite:
+  key: new value
+key: value
+delimiter:
+  key: value
