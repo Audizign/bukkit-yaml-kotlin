@@ -1,6 +1,5 @@
 package dev.idot.yaml
 
-
 import java.io.*
 
 open class Configuration(private val file: File) : Section() {

@@ -4,9 +4,6 @@ import org.yaml.snakeyaml.DumperOptions
 import org.yaml.snakeyaml.Yaml
 import java.io.IOException
 
-/**
- * Represents a section of a [Configuration]
- */
 open class Section(val parent: Section? = null, val path: String = "") : Iterable<Map.Entry<String, Any>> {
 
     var sectionMap: MutableMap<String, Any> = LinkedHashMap()
@@ -849,7 +846,6 @@ open class Section(val parent: Section? = null, val path: String = "") : Iterabl
                         }
                     }
                 }.takeIf { it.isNotEmpty() }
-                println("Header: ${options.header}")
                 System.out.flush()
                 input.toSections(this)
             } ?: emptyMap<String, Any>()
